@@ -1,4 +1,7 @@
 package com.practice.project.airbnb.repository;
 
-public interface RoomRepository {
+import com.practice.project.airbnb.entity.Room;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RoomRepository extends JpaRepository<Room,Long> {
 }
