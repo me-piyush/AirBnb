@@ -43,7 +43,7 @@ public class Hotel {
     @Column(nullable = false)
     private boolean active;
 
-    @ManyToOne
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private User owner;
 
     @JsonIgnore
